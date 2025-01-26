@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mock To Officer</title>
+    <link rel = "Icon" href = "img\MTO_Logo_new.png">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    text-decoration:none;
+    font-family: Arial;
+    box-sizing: border-box;
+
+}
+/* Main heading styling */
+        .Main-heading {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: #05445E;
+    color: #D4F1F4;
+    align-items: center;    
+}
+/* Search container styling */
+/*.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  width: 150px;
+}*/
+
+/* Input field styling */
+.search-input {
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 16px;
+  flex-grow: 1;
+  border-radius: 30px;
+  background-color: #f1f1f1;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.search-input:focus {
+  background-color: #fff;
+}
+
+/* Button styling */
+.search-button {
+  background-color:#D4F1F4;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #05445E;
+}
+/* Form container to align buttons in a row */
+.form-container {
+  display: flex;
+  gap: 15px; /* Space between the buttons */
+}
+
+/* Login Button Styles */
+.Login-button {
+  background-color: #D4F1F4;
+  color: black;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 150px; /* Same width for both buttons */
+  transition: all 0.3s ease;
+}
+
+/* Signup Button Styles */
+.Signup-button {
+  background-color: #D4F1F4;
+  color: black;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 150px; /* Same width for both buttons */
+  transition: all 0.3s ease;
+}
+
+.Login-button:hover {
+  opacity: 0.9;
+}
+
+.Signup-button:hover {
+    opacity: 0.9;
+}
+/*Our courses */
+.Our-Courses {
+  text-align: center; /* Center text inside the container */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-size: 40px;
+  line-height: 1.0;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 20px;
+}
+.course-list {
+  display: flex;
+  gap: 20px; /* Space between the course boxes */
+  flex-wrap: wrap;
+  justify-content: left;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.course-box {
+  background-color: #D4F1F4;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 20px;
+  display:inline-block;
+  
+}
+
+.course-box:hover {
+  transform: translateY(-5px); /* Hover effect to lift the box */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+  color: #333;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.enroll-btn {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+}
+
+.enroll-btn:hover {
+  background-color: #0056b3;
+
+}
+
+.enroll-btn:focus {
+  outline: none;
+}
+.about{
+        text-align: center;
+        margin-top: 20px;
+        padding: 20px;
+        font-size:15px;
+    
+    }
+    .contact{
+        background-color:  #05445E;
+        color: #D4F1F4;
+        padding: 30px;
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <nav class="Main-heading"> 
+        <h1 >Mock To Officer</h1>
+    <div class="search-container">
+        <input type="text" class="search-input" placeholder="Search" style="width: 500px;">
+        <button class="search-button">🔍</button>
+    </div>
+    <div class="form-container">
+            <button class="Login-button">Login</button>
+            <button class="Signup-button">Signup</button>
+        </div>
+    </nav>
+    <p class="Our-Courses">
+        Our Courses
+    </p>
+    <div class="course-list">
+        <div class="course-box" id="vocabulary-course">
+          <h2>Hindu Editorial Analysis with free PDF</h2>
+          <p class="vocab-News">Learn new vocabulary every day from the Hindu newspaper with analysis video.</p>
+          <button class="enroll-btn">Enroll Now</button>
+        </div>
+        
+        <div class="course-box" id="daily-news-course">
+          <h2>Daily News with free PDF</h2>
+          <p class="vocab-News">Stay updated with the latest news articles and get a daily dose of current affairs.</p>
+          <button class="enroll-btn">Enroll Now</button>
+        </div>
+
+        <div class="course-box" id="video-course">
+          <h2>Video Course</h2>
+          <p class="vocab-News">Coming Soon</p>
+          <button class="enroll-btn">Enroll Now</button>
+        </div>
+
+        <div class="course-box" id="Mock-test">
+          <h2>Mock Test</h2>
+          <p class="vocab-News">Coming soon</p>
+          <button class="enroll-btn">Enroll Now</button>
+        </div>
+      </div>
+      <hr>
+      <hr>
+      <div class="about">
+      <h1>About us</h1>
+      <p>"At Mock to Officer, we are an EdTech company dedicated to providing a wealth of resources for effective government examination preparation."</p>
+      </div>
+      <div class="contact">
+      <h4>Contact</h4>
+      <p>Mobile number: +91 xxxxxxxxxx</p>
+      <p>Mail id: Mocktoofficer@gmail.com</p>
+      <p style="margin-top: 30px; font-size: 10px;">© 2024 Mock To officer. All rights reserved.
+</body>
